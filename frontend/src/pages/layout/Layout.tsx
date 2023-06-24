@@ -1,7 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import styles from "./Layout.module.css";
 import Azure from "../../assets/Azure.svg";
-import Alza from "../../assets/alza_cz.svg";
+import Moneta from "../../assets/moneta-logo.svg";
 
 import { CopyRegular, ShareRegular } from "@fluentui/react-icons";
 import { Dialog, Stack, TextField } from "@fluentui/react";
@@ -45,7 +45,7 @@ const Layout = () => {
                         />
                         &nbsp;\&nbsp;
                         <img
-                            src={Alza}
+                            src={Moneta}
                             className={styles.headerIconAlza}
                             aria-hidden="true"
                         />
