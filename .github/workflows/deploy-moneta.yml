@@ -56,6 +56,10 @@ jobs:
       - name: Node build step
         run: |
           cd frontend
+          npm install
+
+      - name: Node build step
+        run: |
           npm run build
 
       - name: Upload artifact for deployment jobs
