@@ -20,7 +20,7 @@
 name: Build and deploy to Azure Web App - Alza
 
 env:
-  AZURE_WEBAPP_NAME: oai-on-your-data-alza  # set this to the name of your Azure Web App
+  AZURE_WEBAPP_NAME: oai-on-your-data-alza-demo  # set this to the name of your Azure Web App
   PYTHON_VERSION: '3.10'              # set this to the Python version to use
 
 on:
