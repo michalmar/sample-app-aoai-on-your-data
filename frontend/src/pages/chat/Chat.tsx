@@ -165,7 +165,8 @@ const Chat = () => {
                                     aria-hidden="true"
                                 />
                                 <h1 className={styles.chatEmptyStateTitle}></h1>
-                                <h2 className={styles.chatEmptyStateSubtitle}>Toto demo je nad znalostní bázi z Alza.cz: https://www.alza.cz/co-je-procesor</h2>
+                                <h2 className={styles.chatEmptyStateSubtitle}>Toto demo je nad vybranou znalostní bázi z Alza.cz</h2>
+                                <p>https://www.alza.cz/co-je-procesor</p>
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">
