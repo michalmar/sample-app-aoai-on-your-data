@@ -1,6 +1,8 @@
 import { Outlet, Link } from "react-router-dom";
 import styles from "./Layout.module.css";
 import Azure from "../../assets/Azure.svg";
+import Alza from "../../assets/alza_cz.svg";
+
 import { CopyRegular, ShareRegular } from "@fluentui/react-icons";
 import { Dialog, Stack, TextField } from "@fluentui/react";
 import { useEffect, useState } from "react";
@@ -41,8 +43,14 @@ const Layout = () => {
                             className={styles.headerIcon}
                             aria-hidden="true"
                         />
+                        &nbsp;\&nbsp;
+                        <img
+                            src={Alza}
+                            className={styles.headerIconAlza}
+                            aria-hidden="true"
+                        />
                         <Link to="/" className={styles.headerTitleContainer}>
-                            <h1 className={styles.headerTitle}>Azure AI</h1>
+                            <h1 className={styles.headerTitle}>&nbsp;</h1>
                         </Link>
                         <div className={styles.shareButtonContainer} role="button" tabIndex={0} aria-label="Share" onClick={handleShareClick} onKeyDown={e => e.key === "Enter" || e.key === " " ? handleShareClick() : null}>
                             <ShareRegular className={styles.shareButton} />
