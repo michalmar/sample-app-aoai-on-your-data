@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import { Stack } from "@fluentui/react";
 import { BroomRegular, DismissRegular, SquareRegular, ShieldLockRegular } from "@fluentui/react-icons";
-
+import { Bot24Regular } from "@fluentui/react-icons";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from "rehype-raw"; 
@@ -166,7 +166,6 @@ const Chat = () => {
                                 />
                                 <h1 className={styles.chatEmptyStateTitle}></h1>
                                 <h2 className={styles.chatEmptyStateSubtitle}>Toto demo je nad vybranou znalostní bázi z Alza.cz</h2>
-                                <p>https://www.alza.cz/co-je-procesor</p>
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">
@@ -195,6 +194,7 @@ const Chat = () => {
                                             <div className={styles.chatMessageUserMessage}>{lastQuestionRef.current}</div>
                                         </div>
                                         <div className={styles.chatMessageGpt}>
+                                            <Bot24Regular />
                                             <Answer
                                                 answer={{
                                                     answer: "Hledám odpověď...",
