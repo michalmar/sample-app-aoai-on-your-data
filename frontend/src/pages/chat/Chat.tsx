@@ -8,7 +8,7 @@ import rehypeRaw from "rehype-raw";
 
 import styles from "./Chat.module.css";
 import Azure from "../../assets/Azure.svg";
-import Alza from "../../assets/alza_cz.svg"; 
+import Logo from "../../assets/logo.png"; 
 
 import {
     ChatMessage,
@@ -160,12 +160,11 @@ const Chat = () => {
                         {!lastQuestionRef.current ? (
                             <Stack className={styles.chatEmptyState}>
                                 <img
-                                    src={Alza}
-                                    className={styles.chatIcon}
+                                    src={Logo}
                                     aria-hidden="true"
                                 />
                                 <h1 className={styles.chatEmptyStateTitle}></h1>
-                                <h2 className={styles.chatEmptyStateSubtitle}>Toto demo je nad vybranou znalostní bázi z Alza.cz</h2>
+                                <h2 className={styles.chatEmptyStateSubtitle}>Toto demo je nad vybranou znalostní bázi z Oriflame.cz</h2>
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">

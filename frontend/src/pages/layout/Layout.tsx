@@ -1,7 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import styles from "./Layout.module.css";
 import Azure from "../../assets/Azure.svg";
-import Alza from "../../assets/alza_cz.svg";
+import Logo from "../../assets/logo.png";
 
 import { CopyRegular, ShareRegular } from "@fluentui/react-icons";
 import { Dialog, Stack, TextField } from "@fluentui/react";
@@ -45,7 +45,7 @@ const Layout = () => {
                         />
                         &nbsp;\&nbsp;
                         <img
-                            src={Alza}
+                            src={Logo}
                             className={styles.headerIconAlza}
                             aria-hidden="true"
                         />
