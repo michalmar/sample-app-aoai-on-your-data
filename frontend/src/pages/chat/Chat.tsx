@@ -162,6 +162,7 @@ const Chat = () => {
                                 <img
                                     src={Logo}
                                     aria-hidden="true"
+                                    height={200}
                                 />
                                 <h1 className={styles.chatEmptyStateTitle}></h1>
                                 <h2 className={styles.chatEmptyStateSubtitle}>Toto demo je nad vybranou znalostní bází</h2>
