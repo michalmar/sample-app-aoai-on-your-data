@@ -165,7 +165,7 @@ const Chat = () => {
                                     height={200}
                                 />
                                 <h1 className={styles.chatEmptyStateTitle}></h1>
-                                <h2 className={styles.chatEmptyStateSubtitle}>Toto demo je nad vybranou znalostní bází</h2>
+                                <h2 className={styles.chatEmptyStateSubtitle}>...this demo contains custom knowledge base...</h2>
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">
@@ -197,7 +197,7 @@ const Chat = () => {
                                             <Bot24Regular />
                                             <Answer
                                                 answer={{
-                                                    answer: "Hledám odpověď...",
+                                                    answer: "Searching...",
                                                     citations: []
                                                 }}
                                                 onCitationClicked={() => null}
@@ -240,7 +240,7 @@ const Chat = () => {
                             </div>
                             <QuestionInput
                                 clearOnSend
-                                placeholder="Ptejte se..."
+                                placeholder="Ask a question..."
                                 disabled={isLoading}
                                 onSend={question => makeApiRequest(question)}
                             />
